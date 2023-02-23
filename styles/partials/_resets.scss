@@ -1,0 +1,26 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

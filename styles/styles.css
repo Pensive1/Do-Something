@@ -1,0 +1,51 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1rem 0;
+  position: relative;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px 100px;
+  gap: 544px;
+  position: absolute;
+  width: 1439px;
+  height: 218px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.57%, rgba(0, 0, 0, 0.7) 100%);
+}/*# sourceMappingURL=styles.css.map */
