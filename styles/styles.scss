@@ -8,9 +8,57 @@
   box-shadow: 0 0 1rem 0;
   position: relative;
   width: 100%;
+
+  &__title {
+    color: black;
+    font-size: 2rem;
+  }
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 8rem;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url("../assets/images/social.jpeg");
+  background-size: cover;
+  //filter: blur(7px);
 }
 
-footer {
+.suggestion {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+
+  &__txt {
+    text-align: center;
+    font-size: 5.4rem;
+  }
+}
+
+.motivation {
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__quote {
+    margin: 0;
+  }
+
+  &__author {
+    font-style: italic;
+  }
+}
+
+.footer {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -28,4 +76,53 @@ footer {
     rgba(0, 0, 0, 0) -7.57%,
     rgba(0, 0, 0, 0.7) 100%
   );
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__filters {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__people {
+    width: 19rem;
+    height: 4rem;
+    border: 2px solid #ffffff;
+    border-radius: 28px;
+    background-color: transparent;
+    padding: 0 2rem;
+    color: #ffffff;
+  }
+
+  &__label {
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+  &__cat {
+    @extend .footer__people;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 2rem;
+  }
+  &__randomise {
+    @extend .footer__people;
+    background: #ffffff;
+    color: black;
+    font-weight: bold;
+  }
+
+  &__refresh {
+    @extend .footer__randomise;
+  }
 }

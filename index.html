@@ -24,11 +24,11 @@
         </h1>
       </article>
       <article class="motivation">
-        <img
+        <!-- <img
           src=""
           alt="Profile picture of [author fullname] "
           class="motivation__profile"
-        />
+        /> -->
         <div class="motivation__txt">
           <blockquote class="motivation__quote">
             <p class="motivation__phrase">
@@ -42,24 +42,28 @@
 
     <footer class="footer">
       <form action="" class="footer__form">
-        <label for="" class="footer__label">People</label>
-        <input type="number" name="numPeople" class="footer__people" />
+        <fieldset class="footer__filters">
+          <label for="" class="footer__label">People</label>
+          <input type="number" name="numPeople" class="footer__people" />
 
-        <select name="category" class="footer__cat">
-          <option value="">Category</option>
-          <option value="charity">Charity</option>
-          <option value="busywork">Chores</option>
-          <option value="cooking">Cooking</option>
-          <option value="diy">DIY</option>
-          <option value="educational">Educational</option>
-          <option value="music">Music</option>
-          <option value="recreational">Recreational</option>
-          <option value="relaxation">Relaxation</option>
-          <option value="social">Social</option>
-        </select>
+          <select name="category" class="footer__cat">
+            <option value="">Category</option>
+            <option value="charity">Charity</option>
+            <option value="busywork">Chores</option>
+            <option value="cooking">Cooking</option>
+            <option value="diy">DIY</option>
+            <option value="educational">Educational</option>
+            <option value="music">Music</option>
+            <option value="recreational">Recreational</option>
+            <option value="relaxation">Relaxation</option>
+            <option value="social">Social</option>
+          </select>
+        </fieldset>
 
-        <button value="random" class="footer__randomise">Surprise Me</button>
-        <button type="submit">Refresh</button>
+        <div class="footer__controls">
+          <button value="random" class="footer__randomise">Surprise Me</button>
+          <button type="submit" class="footer__refresh">Refresh</button>
+        </div>
       </form>
     </footer>
     <script
