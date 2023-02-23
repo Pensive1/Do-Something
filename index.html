@@ -18,7 +18,7 @@
 
     <main class="content">
       <article class="suggestion">
-        <h1 class="suggestion_txt">
+        <h1 class="suggestion__txt">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
           ipsum dolores dignissimos praesentium nisi dolorem odio!
         </h1>
@@ -43,9 +43,9 @@
     <footer class="footer">
       <form action="" class="footer__form">
         <label for="" class="footer__label">People</label>
-        <input type="number" name="numPeople" id="" />
+        <input type="number" name="numPeople" class="footer__people" />
 
-        <select name="category" id="">
+        <select name="category" class="footer__cat">
           <option value="">Category</option>
           <option value="charity">Charity</option>
           <option value="busywork">Chores</option>
@@ -58,9 +58,16 @@
           <option value="social">Social</option>
         </select>
 
-        <button value="random">Random</button>
-        <button type="submit">Go</button>
+        <button value="random" class="footer__randomise">Surprise Me</button>
+        <button type="submit">Refresh</button>
       </form>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
