@@ -8,7 +8,7 @@
 
 ## Summary
 
-DoSometh.ing is a single-page website that recommends activities based on a chosen category and a number of people.
+DoSometh.ing is a single-page website that recommends activities based on a given number of people and category.
 
 ## Background
 
@@ -37,3 +37,13 @@ When filter value changes, a new suggestion is generated. If a suggestion isn’
 - **Refresh:** Generates a new suggestion for a given amount of people and/or category.
 
 - **Surprise me:** Clears filters and generates a random suggestion
+
+---
+
+## Tech Stack
+
+- HTML 5
+- CSS 3
+- Sass
+- Javascript
+- Axios Library
