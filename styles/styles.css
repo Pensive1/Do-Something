@@ -8,8 +8,6 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
-  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/social.jpeg");
-  background-size: cover;
 }
 
 body {
@@ -54,9 +52,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
+  height: calc(100vh - 8rem);
   gap: 8rem;
   position: relative;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/social.jpeg");
+  background-size: cover;
 }
 
 .suggestion {
