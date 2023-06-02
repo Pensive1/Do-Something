@@ -2,7 +2,7 @@
 
 ![App screenshot showing activity suggestions and filters](./assets/readme/00_main.png)
 
-[Live](https://pensive1.github.io/Do-Something/)
+[See Live](https://pensive1.github.io/Do-Something/)
 
 ---
 
