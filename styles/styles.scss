@@ -8,6 +8,7 @@
   box-shadow: 0 0 1rem 0;
   position: relative;
   width: 100%;
+  background-color: #fff;
 
   &__title {
     color: black;
@@ -21,10 +22,7 @@
   flex-direction: column;
   height: 90vh;
   gap: 8rem;
-  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
-    url("../assets/images/social.jpeg");
-  background-size: cover;
-  //filter: blur(7px);
+  position: relative;
 }
 
 .suggestion {
@@ -66,9 +64,8 @@
   gap: 544px;
 
   position: absolute;
-  width: 1439px;
+  width: 100%;
   height: 218px;
-  left: 0px;
   bottom: 0px;
 
   background: linear-gradient(
@@ -106,6 +103,17 @@
   &__label {
     color: #ffffff;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+
+    &-icon {
+      display: block;
+      aspect-ratio: 1/1;
+      width: 2.4rem;
+      filter: invert(100%);
+    }
   }
   &__cat {
     @extend .footer__people;

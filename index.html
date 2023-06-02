@@ -15,20 +15,13 @@
         </a>
       </nav>
     </header>
-
+    <!-- Notes -->
+    <!-- 1. Change background based on selected category -->
     <main class="content">
       <article class="suggestion">
-        <h1 class="suggestion__txt">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-          ipsum dolores dignissimos praesentium nisi dolorem odio!
-        </h1>
+        <h1 class="suggestion__txt">Welcome 👋</h1>
       </article>
       <article class="motivation">
-        <!-- <img
-          src=""
-          alt="Profile picture of [author fullname] "
-          class="motivation__profile"
-        /> -->
         <div class="motivation__txt">
           <blockquote class="motivation__quote">
             <p class="motivation__phrase">
@@ -43,11 +36,18 @@
     <footer class="footer">
       <form action="" class="footer__form">
         <fieldset class="footer__filters">
-          <label for="" class="footer__label">People</label>
-          <input type="number" name="numPeople" class="footer__people" />
+          <label for="numPeople" class="footer__label">
+            <img
+              src="./assets/people.png"
+              alt="People icon"
+              class="footer__label-icon"
+            />
+            People</label
+          >
+          <input type="number" id="numPeople" class="footer__people" />
 
           <select name="category" class="footer__cat">
-            <option value="">Category</option>
+            <option value="">Any</option>
             <option value="charity">Charity</option>
             <option value="busywork">Chores</option>
             <option value="cooking">Cooking</option>
@@ -61,11 +61,12 @@
         </fieldset>
 
         <div class="footer__controls">
-          <button value="random" class="footer__randomise">Surprise Me</button>
           <button type="submit" class="footer__refresh">Refresh</button>
+          <button value="random" class="footer__randomise">Surprise Me</button>
         </div>
       </form>
     </footer>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
       integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="

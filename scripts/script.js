@@ -31,7 +31,6 @@ category.addEventListener("change", (event) => {
 
   if (type !== "" && people.value == "") {
     getSuggestion(`https://www.boredapi.com/api/activity?type=${type}`);
-    // console.log(people.value);
   } else if (type !== "" && people.value !== "") {
     getSuggestion(
       `https://www.boredapi.com/api/activity?participants=${people.value}&type=${type}`
@@ -53,9 +52,8 @@ refreshBtn.addEventListener("submit", (e) => {
 
 //Randomise Button
 randomiseBtn.addEventListener("click", () => {
-  people.value = "";
-  category.value = "";
   getSuggestion("https://www.boredapi.com/api/activity");
+  // category.value = "";
 });
 
 //ACTIVITY API CALL
@@ -99,12 +97,10 @@ const checkFilters = () => {
   }
 };
 
-//QUOTE https://api.goprogram.ai/inspiration
 const getQuote = () => {
   axios
     .get("https://api.goprogram.ai/inspiration")
     .then((result) => {
-      console.log(result.data);
       quoteTxt.innerText = result.data.quote;
       quoteAuthor.innerText = result.data.author;
     })
