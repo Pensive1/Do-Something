@@ -99,7 +99,7 @@ const checkFilters = () => {
 
 const getQuote = () => {
   axios
-    .get("https://api.goprogram.ai/inspiration")
+    .get("https://api.goprogram.co.uk/inspiration")
     .then((result) => {
       quoteTxt.innerText = result.data.quote;
       quoteAuthor.innerText = result.data.author;
