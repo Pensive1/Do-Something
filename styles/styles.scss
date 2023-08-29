@@ -146,8 +146,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    @include mobile-large {
+      flex-direction: row;
+    }
     @include tablet {
       gap: 2rem;
+      flex-direction: column;
       align-items: flex-end;
     }
     @include desktop {
@@ -159,6 +163,12 @@
     background: #ffffff;
     color: black;
     font-weight: bold;
+    @include mobile-large {
+      width: 50%;
+    }
+    @include tablet {
+      width: 19rem;
+    }
   }
 
   &__refresh {

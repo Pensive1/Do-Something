@@ -181,9 +181,15 @@ a {
   flex-direction: column;
   gap: 1.6rem;
 }
+@media screen and (min-width: 425px) {
+  .footer__controls {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__controls {
     gap: 2rem;
+    flex-direction: column;
     align-items: flex-end;
   }
 }
@@ -196,4 +202,14 @@ a {
   background: #ffffff;
   color: black;
   font-weight: bold;
+}
+@media screen and (min-width: 425px) {
+  .footer__randomise, .footer__refresh {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__randomise, .footer__refresh {
+    width: 19rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
