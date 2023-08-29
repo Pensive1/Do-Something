@@ -13,6 +13,13 @@ html {
 body {
   font-size: 1.4rem;
   margin: 0;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/social.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1280px) {
   body {
@@ -57,20 +64,22 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 8rem);
-  gap: 8rem;
-  position: relative;
-  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/social.jpeg");
-  background-size: cover;
+  padding: 0 1.6rem;
+  gap: 4rem;
+  flex: 1 0 40vh;
 }
 
 .suggestion {
-  width: 70%;
   display: flex;
   justify-content: center;
   color: #ffffff;
   position: relative;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .suggestion {
+    width: 70%;
+  }
 }
 .suggestion__txt {
   text-align: center;
@@ -99,36 +108,58 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 20px 100px;
-  gap: 544px;
-  position: absolute;
-  width: 100%;
-  height: 218px;
-  bottom: 0px;
+  padding: 2rem 1.6rem;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.57%, rgba(0, 0, 0, 0.7) 100%);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 20px 100px;
+  }
 }
 .footer__form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  gap: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__form {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 .footer__filters {
+  display: flex;
+  flex-direction: column;
   border: none;
   padding: 0;
   margin: 0;
-  display: flex;
   gap: 2rem;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__filters {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.footer__filter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 .footer__people, .footer__randomise, .footer__refresh, .footer__cat {
-  width: 19rem;
   height: 4rem;
   border: 2px solid #ffffff;
   border-radius: 28px;
   background-color: transparent;
   padding: 0 2rem;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer__people, .footer__randomise, .footer__refresh, .footer__cat {
+    width: 19rem;
+  }
 }
 .footer__label {
   color: #ffffff;
@@ -146,7 +177,14 @@ a {
 }
 .footer__controls {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__controls {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 .footer__randomise, .footer__refresh {
   background: #ffffff;

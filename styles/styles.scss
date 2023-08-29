@@ -1,4 +1,4 @@
-@use "./partials/resets.scss";
+@use "./partials/resets";
 @use "./partials/mixins" as *;
 
 .navbar {
@@ -21,21 +21,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 8rem);
-  gap: 8rem;
-  position: relative;
-  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
-    url("../assets/images/social.jpeg");
-  background-size: cover;
+  padding: 0 1.6rem;
+  gap: 4rem;
+  flex: 1 0 40vh;
 }
 
 .suggestion {
-  width: 70%;
   display: flex;
   justify-content: center;
   color: #ffffff;
   position: relative;
   z-index: 2;
+  @include tablet {
+    width: 70%;
+  }
 
   &__txt {
     text-align: center;
@@ -67,44 +66,60 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 20px 100px;
-  gap: 544px;
-
-  position: absolute;
-  width: 100%;
-  height: 218px;
-  bottom: 0px;
-
+  padding: 2rem 1.6rem;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) -7.57%,
     rgba(0, 0, 0, 0.7) 100%
   );
 
+  @include tablet {
+    padding: 20px 100px;
+  }
+
   &__form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    gap: 4rem;
+    @include tablet {
+      flex-direction: row;
+      gap: 0;
+    }
   }
 
   &__filters {
+    display: flex;
+    flex-direction: column;
     border: none;
     padding: 0;
     margin: 0;
-    display: flex;
     gap: 2rem;
-    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
 
   &__people {
-    width: 19rem;
     height: 4rem;
     border: 2px solid #ffffff;
     border-radius: 28px;
     background-color: transparent;
     padding: 0 2rem;
     color: #ffffff;
+
+    @include tablet {
+      width: 19rem;
+    }
   }
 
   &__label {
@@ -128,7 +143,12 @@
 
   &__controls {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include tablet {
+      flex-direction: row;
+      gap: 2rem;
+    }
   }
   &__randomise {
     @extend .footer__people;

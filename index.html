@@ -36,28 +36,33 @@
     <footer class="footer">
       <form action="" class="footer__form">
         <fieldset class="footer__filters">
-          <label for="numPeople" class="footer__label">
-            <img
-              src="./assets/people.png"
-              alt="People icon"
-              class="footer__label-icon"
-            />
-            People</label
-          >
-          <input type="number" id="numPeople" class="footer__people" />
+          <div class="footer__filter">
+            <label for="numPeople" class="footer__label">
+              <img
+                src="./assets/people.png"
+                alt="People icon"
+                class="footer__label-icon"
+              />
+              People</label
+            >
+            <input type="number" id="numPeople" class="footer__people" />
+          </div>
 
-          <select name="category" class="footer__cat">
-            <option value="">Any</option>
-            <option value="charity">Charity</option>
-            <option value="busywork">Chores</option>
-            <option value="cooking">Cooking</option>
-            <option value="diy">DIY</option>
-            <option value="educational">Educational</option>
-            <option value="music">Music</option>
-            <option value="recreational">Recreational</option>
-            <option value="relaxation">Relaxation</option>
-            <option value="social">Social</option>
-          </select>
+          <div class="footer__filter">
+            <label for="category" class="footer__label">Category</label>
+            <select name="category" class="footer__cat">
+              <option value="">Any</option>
+              <option value="charity">Charity</option>
+              <option value="busywork">Chores</option>
+              <option value="cooking">Cooking</option>
+              <option value="diy">DIY</option>
+              <option value="educational">Educational</option>
+              <option value="music">Music</option>
+              <option value="recreational">Recreational</option>
+              <option value="relaxation">Relaxation</option>
+              <option value="social">Social</option>
+            </select>
+          </div>
         </fieldset>
 
         <div class="footer__controls">

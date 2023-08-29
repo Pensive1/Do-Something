@@ -16,6 +16,14 @@ body {
     font-size: 1.6rem;
   }
   margin: 0;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url("../assets/images/social.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: space-between;
 }
 h1,
 h2,
