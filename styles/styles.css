@@ -187,6 +187,11 @@ a {
     align-items: flex-end;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__controls {
+    flex-direction: row;
+  }
+}
 .footer__randomise, .footer__refresh {
   background: #ffffff;
   color: black;
