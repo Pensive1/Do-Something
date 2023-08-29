@@ -113,7 +113,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 20px 100px;
+    padding: 2rem 2rem;
   }
 }
 .footer__form {
@@ -135,12 +135,13 @@ a {
   border: none;
   padding: 0;
   margin: 0;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .footer__filters {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
+    gap: 2rem;
   }
 }
 .footer__filter {
@@ -182,8 +183,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .footer__controls {
-    flex-direction: row;
     gap: 2rem;
+    align-items: flex-end;
   }
 }
 .footer__randomise, .footer__refresh {

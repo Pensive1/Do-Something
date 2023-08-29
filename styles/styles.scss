@@ -74,7 +74,7 @@
   );
 
   @include tablet {
-    padding: 20px 100px;
+    padding: 2rem 2rem;
   }
 
   &__form {
@@ -95,11 +95,12 @@
     border: none;
     padding: 0;
     margin: 0;
-    gap: 2rem;
+    gap: 1.6rem;
 
     @include tablet {
       flex-direction: row;
-      align-items: center;
+      align-items: flex-end;
+      gap: 2rem;
     }
   }
 
@@ -146,8 +147,8 @@
     flex-direction: column;
     gap: 1.6rem;
     @include tablet {
-      flex-direction: row;
       gap: 2rem;
+      align-items: flex-end;
     }
   }
   &__randomise {
