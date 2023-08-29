@@ -116,6 +116,11 @@ a {
     padding: 2rem 2rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2rem 6%;
+  }
+}
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -168,13 +173,12 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 .footer__label-icon {
   display: block;
   aspect-ratio: 1/1;
   width: 2.4rem;
-  filter: invert(100%);
 }
 .footer__controls {
   display: flex;
@@ -193,7 +197,7 @@ a {
     align-items: flex-end;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .footer__controls {
     flex-direction: row;
   }
